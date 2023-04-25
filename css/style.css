@@ -1,0 +1,127 @@
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .game-board {
+        background: linear-gradient(#87CEEB, #E0F6FF);
+        width: 100%;
+        height: 647px;
+        border-bottom: 15px solid #1af107;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .tumulo {
+        position: absolute;
+        bottom: 0;
+        width: 80px;
+        animation: tumulo-animation 2s infinite linear;
+    }
+
+    .boo{
+        position: absolute;
+        width: 150px;
+        bottom: 0;
+    }
+
+    .jump{
+        animation: jump 500ms ease-out;
+    }
+
+    .nuvens{
+        position: absolute;
+        top: -40%;
+        width: 50%;
+        animation: nuvens-animation 50s infinite linear;
+        
+    }
+    .nuvens2{
+        position: absolute;
+        top: -40%;
+        width: 50%;
+        animation: nuvens2-animation 180s infinite linear;
+        
+    }
+    .nuvens3{
+        position: absolute;
+        top: -40%;
+        width: 50%;
+        animation: nuvens2-animation 90s infinite linear;
+        
+    }
+
+    @keyframes jump {
+        0%{
+            bottom: 0;
+        }
+    
+        25%{
+            bottom: 90px;
+        }
+
+        35%{
+            bottom: 100px;
+        }
+        45%{
+            bottom: 110px;
+        }
+        50%{
+            bottom: 130px;
+        }
+        65%{
+            bottom: 120px;
+        }
+        75%{
+            bottom: 50px;
+        }
+    
+        85%{
+            bottom:30px;
+        }
+        95%{
+            bottom:10px;
+        }
+    
+        100%{
+            bottom: 0px;
+        }
+    }
+
+    @keyframes tumulo-animation {
+        from{
+            right: -80px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+    @keyframes nuvens-animation {
+        from{
+            right: -550px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+    @keyframes nuvens2-animation {
+        from{
+            right: -550px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
+    @keyframes nuvens3-animation {
+        from{
+            right: -550px;
+        }
+
+        to{
+            right: 100%;
+        }
+    }
